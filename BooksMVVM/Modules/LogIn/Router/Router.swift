@@ -16,7 +16,7 @@ enum LogInRouter {
     var view:  UIViewController? {
         switch self {
         case .SignIn: return SignInViewController()
-        case .BooksListView : return UIViewController()
+        case .BooksListView : return BooksListViewController()
         case .none: return nil
         }
     }

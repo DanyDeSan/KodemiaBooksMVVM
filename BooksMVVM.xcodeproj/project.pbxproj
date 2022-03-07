@@ -16,6 +16,12 @@
 		8A1CF2D227BE435A0057BC83 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CF2D127BE435A0057BC83 /* SignInRouter.swift */; };
 		8A776D0327BEC46B00D5B141 /* UIVIewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A776D0227BEC46B00D5B141 /* UIVIewController++.swift */; };
 		8A944BD027BF7CF5006C11C5 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BCF27BF7CF5006C11C5 /* Transitions.swift */; };
+		8A944BD327BF8087006C11C5 /* BooksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BD227BF8087006C11C5 /* BooksListViewController.swift */; };
+		8A944BD527BF8091006C11C5 /* BooksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BD427BF8091006C11C5 /* BooksListViewModel.swift */; };
+		8A944BDC27BF91A2006C11C5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BD927BF91A2006C11C5 /* Endpoint.swift */; };
+		8A944BDD27BF91A2006C11C5 /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BDA27BF91A2006C11C5 /* APIDataManager.swift */; };
+		8A944BDE27BF91A2006C11C5 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BDB27BF91A2006C11C5 /* DataParser.swift */; };
+		8A944BE027BF9513006C11C5 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BDF27BF9513006C11C5 /* UIColor++.swift */; };
 		8AFD40C527BCF69800522064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD40C427BCF69800522064 /* AppDelegate.swift */; };
 		8AFD40C727BCF69800522064 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD40C627BCF69800522064 /* SceneDelegate.swift */; };
 		8AFD40C927BCF69800522064 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD40C827BCF69800522064 /* LoginViewController.swift */; };
@@ -38,6 +44,12 @@
 		8A1CF2D127BE435A0057BC83 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInRouter.swift; path = ../../../../../../Pictures/SignInRouter.swift; sourceTree = "<group>"; };
 		8A776D0227BEC46B00D5B141 /* UIVIewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController++.swift"; sourceTree = "<group>"; };
 		8A944BCF27BF7CF5006C11C5 /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
+		8A944BD227BF8087006C11C5 /* BooksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewController.swift; sourceTree = "<group>"; };
+		8A944BD427BF8091006C11C5 /* BooksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewModel.swift; sourceTree = "<group>"; };
+		8A944BD927BF91A2006C11C5 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		8A944BDA27BF91A2006C11C5 /* APIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
+		8A944BDB27BF91A2006C11C5 /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		8A944BDF27BF9513006C11C5 /* UIColor++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
 		8AFD40C127BCF69800522064 /* BooksMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooksMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFD40C427BCF69800522064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AFD40C627BCF69800522064 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +97,23 @@
 				8A776D0227BEC46B00D5B141 /* UIVIewController++.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A944BD127BF8062006C11C5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8A944BD827BF918B006C11C5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8A944BDA27BF91A2006C11C5 /* APIDataManager.swift */,
+				8A944BDB27BF91A2006C11C5 /* DataParser.swift */,
+				8A944BD927BF91A2006C11C5 /* Endpoint.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		8AFD40B827BCF69800522064 = {
@@ -162,6 +191,9 @@
 		8AFD40DC27BCF6DB00522064 /* BooksList */ = {
 			isa = PBXGroup;
 			children = (
+				8A944BD127BF8062006C11C5 /* Router */,
+				8A944BD227BF8087006C11C5 /* BooksListViewController.swift */,
+				8A944BD427BF8091006C11C5 /* BooksListViewModel.swift */,
 			);
 			path = BooksList;
 			sourceTree = "<group>";
@@ -187,6 +219,8 @@
 		8AFD40E727BCFD3800522064 /* ModelLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8A944BDF27BF9513006C11C5 /* UIColor++.swift */,
+				8A944BD827BF918B006C11C5 /* Networking */,
 				8A776D0127BEC45D00D5B141 /* Extensions */,
 				8AFD40E927BCFD4E00522064 /* Constants.swift */,
 				8A944BCF27BF7CF5006C11C5 /* Transitions.swift */,
@@ -265,9 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1CF2C927BE397E0057BC83 /* Router.swift in Sources */,
+				8A944BDD27BF91A2006C11C5 /* APIDataManager.swift in Sources */,
+				8A944BDE27BF91A2006C11C5 /* DataParser.swift in Sources */,
 				8AFD40E227BCF8F700522064 /* InputTextField.swift in Sources */,
 				8A1CF2C627BE34DC0057BC83 /* FilledButton.swift in Sources */,
+				8A944BE027BF9513006C11C5 /* UIColor++.swift in Sources */,
 				8AFD40E427BCF99900522064 /* BindableView.swift in Sources */,
+				8A944BD527BF8091006C11C5 /* BooksListViewModel.swift in Sources */,
 				8A1CF2CD27BE3CF30057BC83 /* SignInViewModel.swift in Sources */,
 				8AFD40DF27BCF7C300522064 /* LoginViewModel.swift in Sources */,
 				8A776D0327BEC46B00D5B141 /* UIVIewController++.swift in Sources */,
@@ -277,10 +315,12 @@
 				8A944BD027BF7CF5006C11C5 /* Transitions.swift in Sources */,
 				8AFD40C527BCF69800522064 /* AppDelegate.swift in Sources */,
 				8A1CF2CB27BE3CE90057BC83 /* SignInViewController.swift in Sources */,
+				8A944BDC27BF91A2006C11C5 /* Endpoint.swift in Sources */,
 				8A1CF2C427BE2F4A0057BC83 /* LinkButton.swift in Sources */,
 				8AFD40C727BCF69800522064 /* SceneDelegate.swift in Sources */,
 				8A1CF2CF27BE41170057BC83 /* UnfilledButton.swift in Sources */,
 				8AFD40EA27BCFD4E00522064 /* Constants.swift in Sources */,
+				8A944BD327BF8087006C11C5 /* BooksListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

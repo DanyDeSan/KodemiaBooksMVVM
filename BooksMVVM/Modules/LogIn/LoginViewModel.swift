@@ -24,7 +24,7 @@ final class LoginViewModel {
     private func continueOnLoginProcess() {
         guard validateEmailAddress(),
               validatePassword() else { return }
-        router.value = .BooksListView(.leftRight)
+        router.value = .BooksListView(.rightLeft)
         
     }
     
