@@ -19,6 +19,9 @@ final class LoginViewController: UIViewController {
     
     private lazy var loginButton: FilledButton = FilledButton(title: Constants.login, frame: CGRect())
     
+    private lazy var tableView1: UITableView = UITableView()
+    private lazy var tableView2: UITableView = UITableView()
+    
     private lazy var stackView: UIStackView = {
         let stack: UIStackView = UIStackView()
         stack.axis = .vertical
@@ -54,6 +57,12 @@ final class LoginViewController: UIViewController {
         iniUI()
         initViewModel()
         activateHideKeyboardGestureRecognizer()
+        tableView1.delegate = self
+        tableView1.dataSource = self
+        tableView2.delegate = self
+        tableView2.dataSource = self
+        tableView1.tag = 1
+        tableView2.tag = 2
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,6 +80,9 @@ final class LoginViewController: UIViewController {
     }
     
     func initViewModel() {
+        // Aqui establecemos la conexion entre viewmodel y el viewcontroller
+        viewModel.viewContoller = self
+        // Aqui se hace binding de los observadores
         userInputTextField.bind(to: viewModel.userInput)
         passwordInputTextField.bind(to: viewModel.userPassword)
         viewModel.router.valueChanged = { [weak self] router in
@@ -167,5 +179,38 @@ final class LoginViewController: UIViewController {
             completion: nil)
         
     }
+    
+    func goToNextView() {
+        // Que sea llamada desde el view model y que nos lleve a la siguiente vista.
+        let viewController: UIViewController = UIViewController()
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
 }
 
+
+extension LoginViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView.tag == 1 {
+            // viewModel.didSelectRowAt(indexPath:)
+        } else {
+            
+        }
+    }
+}
+
+extension LoginViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+}

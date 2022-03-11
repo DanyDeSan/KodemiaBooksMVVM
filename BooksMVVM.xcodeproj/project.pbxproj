@@ -14,6 +14,7 @@
 		8A1CF2CD27BE3CF30057BC83 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CF2CC27BE3CF30057BC83 /* SignInViewModel.swift */; };
 		8A1CF2CF27BE41170057BC83 /* UnfilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CF2CE27BE41170057BC83 /* UnfilledButton.swift */; };
 		8A1CF2D227BE435A0057BC83 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1CF2D127BE435A0057BC83 /* SignInRouter.swift */; };
+		8A29D93727DAFB62002A2488 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A29D93627DAFB62002A2488 /* LogIn.storyboard */; };
 		8A776D0327BEC46B00D5B141 /* UIVIewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A776D0227BEC46B00D5B141 /* UIVIewController++.swift */; };
 		8A944BD027BF7CF5006C11C5 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BCF27BF7CF5006C11C5 /* Transitions.swift */; };
 		8A944BD327BF8087006C11C5 /* BooksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A944BD227BF8087006C11C5 /* BooksListViewController.swift */; };
@@ -42,6 +43,7 @@
 		8A1CF2CC27BE3CF30057BC83 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		8A1CF2CE27BE41170057BC83 /* UnfilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfilledButton.swift; sourceTree = "<group>"; };
 		8A1CF2D127BE435A0057BC83 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInRouter.swift; path = ../../../../../../Pictures/SignInRouter.swift; sourceTree = "<group>"; };
+		8A29D93627DAFB62002A2488 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		8A776D0227BEC46B00D5B141 /* UIVIewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController++.swift"; sourceTree = "<group>"; };
 		8A944BCF27BF7CF5006C11C5 /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
 		8A944BD227BF8087006C11C5 /* BooksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				8A1CF2C727BE39710057BC83 /* Router */,
 				8AFD40C827BCF69800522064 /* LoginViewController.swift */,
 				8AFD40DE27BCF7C300522064 /* LoginViewModel.swift */,
+				8A29D93627DAFB62002A2488 /* LogIn.storyboard */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AFD40D127BCF69900522064 /* LaunchScreen.storyboard in Resources */,
+				8A29D93727DAFB62002A2488 /* LogIn.storyboard in Resources */,
 				8AFD40CE27BCF69900522064 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

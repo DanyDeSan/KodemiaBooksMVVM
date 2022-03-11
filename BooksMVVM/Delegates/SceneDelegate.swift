@@ -14,6 +14,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
+//        let storyboard: UIStoryboard = UIStoryboard(name: "LogIn", bundle: nil)
+//        let viewController: UIViewController = storyboard.instantiateViewController(withIdentifier: "viewController")
+        
+        /*
+         
+         if usuarioExiste { // Flujo con usuario logeado
+          let dashboardContrller = DashboardController()
+         window?.rootViewController = dashboard
+         } else { // Flujo con usuario no logeado
+            let loginViewController = LoginViewController()
+            window?.rootViewController = loginViewController
+         }
+         */
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = scene
         let loginViewController = LoginViewController()

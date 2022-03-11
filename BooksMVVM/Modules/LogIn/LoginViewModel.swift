@@ -8,6 +8,9 @@
 import Foundation
 
 final class LoginViewModel {
+    
+    weak var viewContoller: LoginViewController?
+    
     var userInput: Observable<String> = Observable<String>("")
     var userPassword: Observable<String> = Observable<String>("")
     var router: Observable<LogInRouter> = Observable<LogInRouter>(.none)
@@ -24,7 +27,11 @@ final class LoginViewModel {
     private func continueOnLoginProcess() {
         guard validateEmailAddress(),
               validatePassword() else { return }
-        router.value = .BooksListView(.rightLeft)
+        // Tenemos que movernos a la siguiente
+        // Por medio de un router, que es un observador
+//        router.value = .BooksListView(.rightLeft)
+        viewContoller?.goToNextView()
+        
         
     }
     
